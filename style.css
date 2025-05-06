@@ -76,3 +76,12 @@ body {
     font-size: 14px;
   }
 }
+button {
+  margin: 3px;
+  padding: 8px 12px;
+}
+
+#hasil {
+  font-weight: bold;
+  color: green;
+}
