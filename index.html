@@ -49,6 +49,30 @@
 <button onclick="kira('bahagi')">Bahagi</button>
 
 <p>Keputusan: <span id="hasil"></span></p>
+  <script>
+  function kira(operasi) {
+    var nombor1 = parseFloat(document.getElementById("nombor1").value);
+    var nombor2 = parseFloat(document.getElementById("nombor2").value);
+    var hasil = 0;
+
+    if (isNaN(nombor1) || isNaN(nombor2)) {
+      document.getElementById("hasil").textContent = "Sila masukkan dua nombor.";
+      return;
+    }
+
+    if (operasi === 'tambah') {
+      hasil = nombor1 + nombor2;
+    } else if (operasi === 'tolak') {
+      hasil = nombor1 - nombor2;
+    } else if (operasi === 'darab') {
+      hasil = nombor1 * nombor2;
+    } else if (operasi === 'bahagi') {
+      hasil = nombor2 !== 0 ? nombor1 / nombor2 : 'Tak boleh bahagi dengan sifar';
+    }
+
+    document.getElementById("hasil").textContent = hasil;
+  }
+</script>
   
   <script src="script.js"></script>
 </body>
