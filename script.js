@@ -24,7 +24,31 @@ function semakBorang() {
   document.getElementById("mesejBorang").innerText = "Terima kasih!";
   return false; // Elak reload laman
 }
-  // Tukar  Tema
+  // Fungsi Tukar  Tema
 function tukarTema() {
   document.body.classList.toggle("malam");
 }
+// Fungsi Kalkulator
+function kira(operasi) {
+    var nombor1 = parseFloat(document.getElementById("nombor1").value);
+    var nombor2 = parseFloat(document.getElementById("nombor2").value);
+    var hasil = 0;
+
+    if (isNaN(nombor1) || isNaN(nombor2)) {
+      document.getElementById("hasil").textContent = "Sila masukkan dua nombor.";
+      return;
+    }
+
+    if (operasi === 'tambah') {
+      hasil = nombor1 + nombor2;
+    } else if (operasi === 'tolak') {
+      hasil = nombor1 - nombor2;
+    } else if (operasi === 'darab') {
+      hasil = nombor1 * nombor2;
+    } else if (operasi === 'bahagi') {
+      hasil = nombor2 !== 0 ? nombor1 / nombor2 : 'Tak boleh bahagi dengan sifar';
+    }
+
+    document.getElementById("hasil").textContent = hasil;
+  }
+  
