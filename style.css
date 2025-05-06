@@ -38,3 +38,16 @@ body.malam {
   background-color: #222;
   color: #eee;
 }
+body {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
