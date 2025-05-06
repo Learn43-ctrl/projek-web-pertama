@@ -1,0 +1,40 @@
+body {
+  background-color: #eef;
+  color: #222;
+  font-family: sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  color: #2e8b57;
+}
+
+input, button {
+  margin: 5px;
+  padding: 8px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#388E3C;
+}
+
+img {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+body.malam {
+  background-color: #222;
+  color: #eee;
+}

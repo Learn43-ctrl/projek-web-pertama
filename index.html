@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Projek JavaScript Lengkap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Contoh JavaScript Interaktif</h1>
+
+  <h2>1. Input Pengguna</h2>
+  <input type="text" id="nama" placeholder="Masukkan nama anda">
+  <button onclick="paparNama()">Hantar</button>
+  <p id="outputNama"></p>
+
+  <h2>2. Pengiraan Tambah Nombor</h2>
+  <input type="number" id="nombor1" placeholder="Nombor 1">
+  <input type="number" id="nombor2" placeholder="Nombor 2">
+  <button onclick="jumlahkan()">Kira Jumlah</button>
+  <p id="hasilJumlah"></p>
+
+  <h2>3. Semakan Borang</h2>
+  <form onsubmit="return semakBorang()">
+    <input type="text" id="email" placeholder="Masukkan emel">
+    <button type="submit">Hantar</button>
+  </form>
+  <p id="mesejBorang"></p>
+  
+  <h2>4.Gambar</h2>
+  <img src="img/contoh.jpg" alt="GAMBAR Contoh" width="250">
+  
+  <h2>5.Tukar Tema</h2>
+  <button onclick="tukarTema()">Tukar Tema</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
